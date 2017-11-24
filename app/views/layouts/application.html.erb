@@ -12,17 +12,13 @@
 
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-	
-
-
 </head>
 
 <body>
 
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#!" class="brand-logo">StartupRails</a>
+			<%= link_to 'StartupRails', root_path, class: 'brand-logo'  %>
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="<%= videos_path %>"><i class="large material-icons">view_list</i></a></li>
