@@ -27,8 +27,8 @@
 			</div>
 			<div class="card-action">
 				<!-- Next & Previous  -->
-				<a href="#">Previous</a>
-				<a href="#" class="right">Next</a>
+				<%= link_to "Previous", @prev_video %>
+				<%= link_to "Next", @next_video, class: "right" %>
 			</div>
 		</div>
 	</div>
@@ -53,8 +53,8 @@
 		  	});
 		  	video.playbackRate(2);
 
-		}
-	});
+		  }
+		});
 
 	function setplaySpeed(s) {
 		_wq.push({
@@ -64,6 +64,5 @@
 			}
 		});
 	}
-
 
 </script>
