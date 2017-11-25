@@ -25,10 +25,11 @@
 				<span class="card-title"><%= @video.title %></span>
 				<p><%= @video.description %></p>
 			</div>
-			<div class="card-action">
-				<!-- Next & Previous  -->
-				<%= link_to "Previous", @prev_video %>
-				<%= link_to "Next", @next_video, class: "right" %>
+			<div class="card-action video-action">
+				<%= link_to "Previous", @prev_video if !@prev_video.nil? %>
+				<span class="right">
+					<%= link_to "Next", @next_video if !@next_video.nil? %>
+				</span>	
 			</div>
 		</div>
 	</div>
