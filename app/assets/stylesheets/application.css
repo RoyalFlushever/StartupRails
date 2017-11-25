@@ -18,3 +18,9 @@
   display: table;
   clear: both;
 }
+
+.list-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
